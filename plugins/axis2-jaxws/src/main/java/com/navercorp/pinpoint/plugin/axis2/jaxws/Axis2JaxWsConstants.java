@@ -14,8 +14,6 @@
  */
 package com.navercorp.pinpoint.plugin.axis2.jaxws;
 
-import static com.navercorp.pinpoint.common.trace.ServiceTypeProperty.*;
-
 import com.navercorp.pinpoint.common.trace.ServiceType;
 import com.navercorp.pinpoint.common.trace.ServiceTypeFactory;
 
@@ -26,10 +24,4 @@ public final class Axis2JaxWsConstants {
     public static final String TYPE_NAME = "AXIS2_JAXWS";
 
     public static final ServiceType AXIS2_JAXWS_METHOD = ServiceTypeFactory.of(1071, "AXIS2_JAXWS_METHOD");
-
-    public static final String METADATA_TRACE = "trace";
-    public static final String METADATA_ASYNC = "async";
-    public static final String METADATA_ASYNC_TRACE_ID = "asyncTraceId";
-
-    public static final String ATTRIBUTE_PINPOINT_TRACE = "PINPOINT_TRACE";
 }
