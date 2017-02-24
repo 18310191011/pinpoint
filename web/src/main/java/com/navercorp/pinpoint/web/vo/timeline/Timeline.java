@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 NAVER Corp.
+ * Copyright 2017 NAVER Corp.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.navercorp.pinpoint.common.server.util;
+package com.navercorp.pinpoint.web.vo.timeline;
+
+import java.util.List;
 
 /**
  * @author HyunGil Jeong
  */
-public enum AgentEventTypeCategory {
-    @Deprecated DURATIONAL,
-    AGENT_LIFECYCLE,
-    USER_REQUEST,
-    THREAD_DUMP,
-    OTHER
+public interface Timeline<T> {
+
+    List<T> getTimelineSegments();
+
 }
