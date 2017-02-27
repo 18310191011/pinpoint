@@ -12,6 +12,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>axis2-jaxws</module>
         <module>httpclient3</module>
         <module>httpclient4</module>
         <module>ning-asynchttpclient</module>
@@ -54,6 +55,11 @@
     </modules>
 
     <dependencies>
+        <dependency>
+            <groupId>com.navercorp.pinpoint</groupId>
+            <artifactId>pinpoint-axis2-jaxws-plugin</artifactId>
+            <version>${project.version}</version>
+        </dependency>    
         <dependency>
             <groupId>com.navercorp.pinpoint</groupId>
             <artifactId>pinpoint-httpclient3-plugin</artifactId>
